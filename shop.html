@@ -1,152 +1,149 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DesignerShoe — Shop</title>
   <link rel="stylesheet" href="assets/styles.css" />
-  <!-- React via CDN (development) -->
+
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
+
 <body>
-    <div id="scroll-progress"></div>
+  <div id="scroll-progress"></div>
 
-  <!-- Header -->
-   <header>
-  <nav class="navbar">
-    <a href="index.html" class="logo">Dripland</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
 
-      <!-- Desktop dropdown -->
-      <div class="desktop-only dropdown">
-        <span class="dropdown-title">Categories</span>
-        <div class="dropdown-menu">
-          <a href="index.html#categories">All Categories</a>
-          <a href="shop.html?category=sneakers">Sneakers</a>
-          <a href="shop.html?category=runners">Runners</a>
-          <a href="shop.html?category=classic">Classic</a>
-          <a href="shop.html?category=limited">Limited Edition</a>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Dripland</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+
+
+        <div class="desktop-only dropdown">
+          <span class="dropdown-title">Categories</span>
+          <div class="dropdown-menu">
+            <a href="index.html#categories">All Categories</a>
+            <a href="shop.html?category=sneakers">Sneakers</a>
+            <a href="shop.html?category=runners">Runners</a>
+            <a href="shop.html?category=classic">Classic</a>
+            <a href="shop.html?category=limited">Limited Edition</a>
+          </div>
         </div>
+
+        <a class="mobile-only" href="index.html#categories">Categories</a>
+
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="cart.html">Cart</a>
       </div>
-
-      <!-- Mobile plain link -->
-      <a class="mobile-only" href="index.html#categories">Categories</a>
-
-      <a href="gallery.html">Gallery</a>
-      <a href="shop.html">Shop</a>
-      <a href="men.html">Men</a>
-      <a href="women.html">Women</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-      <a href="cart.html">Cart</a>
-    </div>
-    <button aria-label="Menu" class="hamburger">&#9776;</button>
-  </nav>
-</header>
-  <!-- paste header here -->
+      <button aria-label="Menu" class="hamburger">&#9776;</button>
+    </nav>
+  </header>
 
   <main class="main">
     <h1>Shop</h1>
     <div id="shop-root"></div>
   </main>
 
-  <!-- Footer -->
-   <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-col">
-      <h4>DesignerShoe</h4>
-      <p class="meta">Performance meets style. Crafted for everyday athletes and tastemakers.</p>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>DesignerShoe</h4>
+        <p class="meta">Performance meets style. Crafted for everyday athletes and tastemakers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html?category=new">New Arrivals</a></li>
+          <li><a href="shop.html?category=bestsellers">Best Sellers</a></li>
+          <li><a href="shop.html?category=limited">Limited Edition</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html#shipping">Shipping</a></li>
+          <li><a href="faq.html#returns">Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Shop</h4>
-      <ul class="footer-links">
-        <li><a href="shop.html?category=new">New Arrivals</a></li>
-        <li><a href="shop.html?category=bestsellers">Best Sellers</a></li>
-        <li><a href="shop.html?category=limited">Limited Edition</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="women.html">Women</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <span>&copy; 2025 DesignerShoe</span>
+      <span>Privacy & Terms</span>
     </div>
-    <div class="footer-col">
-      <h4>Help</h4>
-      <ul class="footer-links">
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html#shipping">Shipping</a></li>
-        <li><a href="faq.html#returns">Returns</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Newsletter</h4>
-      <form class="newsletter" onsubmit="event.preventDefault()">
-        <input type="email" placeholder="you@example.com" required />
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>&copy; 2025 DesignerShoe</span>
-    <span>Privacy & Terms</span>
-  </div>
-</footer>
-  <!-- paste footer here -->
+  </footer>
 
   <script src="assets/main.js" defer></script>
   <script type="text/babel">
- const PRODUCTS = [
-  { id: 'air-flex',    name: 'Air Flex',    price: '$199', img: 'assets/media/AIR+JORDAN+3+RETRO1.webp',    color: '#ececec' },
-  { id: 'runner-x',    name: 'Runner X',    price: '$149', img: 'assets/media/AIR+ZOOM+PEGASUS+411.webp',color: '#e8e8e8' },
-  { id: 'classic-pro', name: 'Classic Pro', price: '$129', img: 'assets/media/u1906lcr_nb_05_i.webp',color: '#f0f0f0' },
-  { id: 'limitless',   name: 'Limitless',   price: '$179', img: 'assets/media/AIR+MAX+95+OG+PRM1.webp',color: '#ededed' },
-  { id: 'street-nova', name: 'Street Nova', price: '$159', img: 'assets/media/JORDAN+TATUM+41.webp',color: '#efefef' },
-  { id: 'trail-edge',  name: 'Trail Edge',  price: '$169', img: 'assets/media/ct500grn_nb_05_i.webp',color: '#ececec' },
-  { id: 'urban-lite',  name: 'Urban Lite',  price: '$139', img: 'assets/media/JORDAN+TRUNNER+O_S1.webp',color: '#e6e6e6' },
-  { id: 'velocity',    name: 'Velocity',    price: '$189', img: 'assets/media/mevozrb4_nb_05_i.webp',color: '#e7e7e7' },
-  { id: 'prime-court', name: 'Prime Court', price: '$149', img: 'assets/media/mfcxly5_nb_05_i.webp',color: '#f2f2f2' },
-  { id: 'aero-max',    name: 'Aero Max',    price: '$209', img: 'assets/media/u370oa_nb_05_i.webp',color: '#ececec' },
-  { id: 'tempo',       name: 'Tempo',       price: '$139', img: 'assets/media/NIKE+C1TY+PRM1.webp',color: '#e8e8e8' },
-  { id: 'stride-pro',  name: 'Stride Pro',  price: '$169', img: 'assets/media/u1906nvp_nb_05_i.webp',color: '#ededed' },
-  { id: 'zen-walk',    name: 'Zen Walk',    price: '$119', img: 'assets/media/w88015a_nb_05_i.webp',color: '#efefef' },
-];
+    const PRODUCTS = [
+      { id: 'air-flex', name: 'Air Flex', price: '$199', img: 'assets/media/AIR+JORDAN+3+RETRO1.webp', color: '#ececec' },
+      { id: 'runner-x', name: 'Runner X', price: '$149', img: 'assets/media/AIR+ZOOM+PEGASUS+411.webp', color: '#e8e8e8' },
+      { id: 'classic-pro', name: 'Classic Pro', price: '$129', img: 'assets/media/u1906lcr_nb_05_i.webp', color: '#f0f0f0' },
+      { id: 'limitless', name: 'Limitless', price: '$179', img: 'assets/media/AIR+MAX+95+OG+PRM1.webp', color: '#ededed' },
+      { id: 'street-nova', name: 'Street Nova', price: '$159', img: 'assets/media/JORDAN+TATUM+41.webp', color: '#efefef' },
+      { id: 'trail-edge', name: 'Trail Edge', price: '$169', img: 'assets/media/ct500grn_nb_05_i.webp', color: '#ececec' },
+      { id: 'urban-lite', name: 'Urban Lite', price: '$139', img: 'assets/media/JORDAN+TRUNNER+O_S1.webp', color: '#e6e6e6' },
+      { id: 'velocity', name: 'Velocity', price: '$189', img: 'assets/media/mevozrb4_nb_05_i.webp', color: '#e7e7e7' },
+      { id: 'prime-court', name: 'Prime Court', price: '$149', img: 'assets/media/mfcxly5_nb_05_i.webp', color: '#f2f2f2' },
+      { id: 'aero-max', name: 'Aero Max', price: '$209', img: 'assets/media/u370oa_nb_05_i.webp', color: '#ececec' },
+      { id: 'tempo', name: 'Tempo', price: '$139', img: 'assets/media/NIKE+C1TY+PRM1.webp', color: '#e8e8e8' },
+      { id: 'stride-pro', name: 'Stride Pro', price: '$169', img: 'assets/media/u1906nvp_nb_05_i.webp', color: '#ededed' },
+      { id: 'zen-walk', name: 'Zen Walk', price: '$119', img: 'assets/media/w88015a_nb_05_i.webp', color: '#efefef' },
+    ];
 
-  function Card({ p }) {
-  const onCardClick = (e) => {
-    if (e.target.closest('.price-tag')) return;
-    location.href = `product.html?id=${p.id}`;
-  };
-  return (
-    <div className="shop-card modern" onClick={onCardClick} role="link" tabIndex={0}
-         onKeyDown={(e)=>{ if(e.key==='Enter') onCardClick(e); }}>
-      <div className="card-image" style={{ backgroundColor: p.color || '#ececec' }}>
-        {p.img ? (
-          <img
-            src={p.img}
-            alt={p.name}
-            width={1040}
-            height={1040}
-            loading="lazy"
-            onError={(e)=>{ e.currentTarget.style.display='none'; }} // no JPG fallback, keep color
-          />
-        ) : null}
-      </div>
-      <div className="card-meta">
-        <h3>{p.name}</h3>
-        <span className="price-tag">{p.price}</span>
-      </div>
-    </div>
-  );
-}
+    function Card({ p }) {
+      const onCardClick = (e) => {
+        if (e.target.closest('.price-tag')) return;
+        location.href = `product.html?id=${p.id}`;
+      };
+      return (
+        <div className="shop-card modern" onClick={onCardClick} role="link" tabIndex={0}
+          onKeyDown={(e) => { if (e.key === 'Enter') onCardClick(e); }}>
+          <div className="card-image" style={{ backgroundColor: p.color || '#ececec' }}>
+            {p.img ? (
+              <img
+                src={p.img}
+                alt={p.name}
+                width={1040}
+                height={1040}
+                loading="lazy"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              />
+            ) : null}
+          </div>
+          <div className="card-meta">
+            <h3>{p.name}</h3>
+            <span className="price-tag">{p.price}</span>
+          </div>
+        </div>
+      );
+    }
 
-function Grid() {
-  return <div className="shop-grid">{PRODUCTS.map((p)=> <Card key={p.id} p={p} />)}</div>;
-}
+    function Grid() {
+      return <div className="shop-grid">{PRODUCTS.map((p) => <Card key={p.id} p={p} />)}</div>;
+    }
 
-  const root = ReactDOM.createRoot(document.getElementById('shop-root'));
-  root.render(<Grid />);
-</script>
+    const root = ReactDOM.createRoot(document.getElementById('shop-root'));
+    root.render(<Grid />);
+  </script>
 </body>
+
 </html>

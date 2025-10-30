@@ -1,120 +1,115 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DesignerShoe — Product</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
-    <div id="scroll-progress"></div>
+  <div id="scroll-progress"></div>
 
-  <!-- Header -->
-      <header>
-  <nav class="navbar">
-    <a href="index.html" class="logo">Dripland</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Dripland</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
 
-      <!-- Desktop dropdown -->
-      <div class="desktop-only dropdown">
-        <span class="dropdown-title">Categories</span>
-        <div class="dropdown-menu">
-          <a href="index.html#categories">All Categories</a>
-          <a href="shop.html?category=sneakers">Sneakers</a>
-          <a href="shop.html?category=runners">Runners</a>
-          <a href="shop.html?category=classic">Classic</a>
-          <a href="shop.html?category=limited">Limited Edition</a>
+        <div class="desktop-only dropdown">
+          <span class="dropdown-title">Categories</span>
+          <div class="dropdown-menu">
+            <a href="index.html#categories">All Categories</a>
+            <a href="shop.html?category=sneakers">Sneakers</a>
+            <a href="shop.html?category=runners">Runners</a>
+            <a href="shop.html?category=classic">Classic</a>
+            <a href="shop.html?category=limited">Limited Edition</a>
+          </div>
         </div>
+
+        <a class="mobile-only" href="index.html#categories">Categories</a>
+
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="cart.html">Cart</a>
       </div>
-
-      <!-- Mobile plain link -->
-      <a class="mobile-only" href="index.html#categories">Categories</a>
-
-      <a href="gallery.html">Gallery</a>
-      <a href="shop.html">Shop</a>
-      <a href="men.html">Men</a>
-      <a href="women.html">Women</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-      <a href="cart.html">Cart</a>
-    </div>
-    <button aria-label="Menu" class="hamburger">&#9776;</button>
-  </nav>
-</header>
-  <!-- paste header here -->
+      <button aria-label="Menu" class="hamburger">&#9776;</button>
+    </nav>
+  </header>
 
   <main class="main product" id="product-root">
-  <div class="product-media">
-  <div class="product-main">
-    <img id="prod-main" alt="Product image" width="1500" height="1500" loading="lazy" />
-  </div>
-  <div class="thumbs" id="thumbs">
-    <button class="thumb active" data-img="1" aria-label="Image 1">
-      <img id="t1" alt="Thumbnail 1" width="200" height="200" loading="lazy" />
-    </button>
-    <button class="thumb" data-img="2" aria-label="Image 2">
-      <img id="t2" alt="Thumbnail 2" width="200" height="200" loading="lazy" />
-    </button>
-    <button class="thumb" data-img="3" aria-label="Image 3">
-      <img id="t3" alt="Thumbnail 3" width="200" height="200" loading="lazy" />
-    </button>
-  </div>
-</div>
-  <div class="product-info">
-    <h1 data-name>Product Name</h1>
-    <div class="price" data-price>$0.00</div>
-    <p class="meta">SKU: <span data-sku>SKU-000</span></p>
-    <p data-desc>Product description here.</p>
-    <div class="product-cta">
-      <button id="add-to-cart">Add to Cart</button>
-      <a href="shop.html"><button type="button">Back to Shop</button></a>
+    <div class="product-media">
+      <div class="product-main">
+        <img id="prod-main" alt="Product image" width="1500" height="1500" loading="lazy" />
+      </div>
+      <div class="thumbs" id="thumbs">
+        <button class="thumb active" data-img="1" aria-label="Image 1">
+          <img id="t1" alt="Thumbnail 1" width="200" height="200" loading="lazy" />
+        </button>
+        <button class="thumb" data-img="2" aria-label="Image 2">
+          <img id="t2" alt="Thumbnail 2" width="200" height="200" loading="lazy" />
+        </button>
+        <button class="thumb" data-img="3" aria-label="Image 3">
+          <img id="t3" alt="Thumbnail 3" width="200" height="200" loading="lazy" />
+        </button>
+      </div>
     </div>
-  </div>
-</main>
+    <div class="product-info">
+      <h1 data-name>Product Name</h1>
+      <div class="price" data-price>$0.00</div>
+      <p class="meta">SKU: <span data-sku>SKU-000</span></p>
+      <p data-desc>Product description here.</p>
+      <div class="product-cta">
+        <button id="add-to-cart">Add to Cart</button>
+        <a href="shop.html"><button type="button">Back to Shop</button></a>
+      </div>
+    </div>
+  </main>
 
-  <!-- Footer -->
-   <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-col">
-      <h4>DesignerShoe</h4>
-      <p class="meta">Performance meets style. Crafted for everyday athletes and tastemakers.</p>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>DesignerShoe</h4>
+        <p class="meta">Performance meets style. Crafted for everyday athletes and tastemakers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html?category=new">New Arrivals</a></li>
+          <li><a href="shop.html?category=bestsellers">Best Sellers</a></li>
+          <li><a href="shop.html?category=limited">Limited Edition</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html#shipping">Shipping</a></li>
+          <li><a href="faq.html#returns">Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form class="newsletter" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Shop</h4>
-      <ul class="footer-links">
-        <li><a href="shop.html?category=new">New Arrivals</a></li>
-        <li><a href="shop.html?category=bestsellers">Best Sellers</a></li>
-        <li><a href="shop.html?category=limited">Limited Edition</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="women.html">Women</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <span>&copy; 2025 DesignerShoe</span>
+      <span>Privacy & Terms</span>
     </div>
-    <div class="footer-col">
-      <h4>Help</h4>
-      <ul class="footer-links">
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html#shipping">Shipping</a></li>
-        <li><a href="faq.html#returns">Returns</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Newsletter</h4>
-      <form class="newsletter" onsubmit="event.preventDefault()">
-        <input type="email" placeholder="you@example.com" required />
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>&copy; 2025 DesignerShoe</span>
-    <span>Privacy & Terms</span>
-  </div>
-</footer>
-  <!-- paste footer here -->
+  </footer>
 
   <script src="assets/main.js" defer></script>
 </body>
+
 </html>
