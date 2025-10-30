@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DesignerShoe — Contact</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <div id="scroll-progress"></div>
+
+  <!-- Header -->
+      <header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">Dripland</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+
+      <!-- Desktop dropdown -->
+      <div class="desktop-only dropdown">
+        <span class="dropdown-title">Categories</span>
+        <div class="dropdown-menu">
+          <a href="index.html#categories">All Categories</a>
+          <a href="shop.html?category=sneakers">Sneakers</a>
+          <a href="shop.html?category=runners">Runners</a>
+          <a href="shop.html?category=classic">Classic</a>
+          <a href="shop.html?category=limited">Limited Edition</a>
+        </div>
+      </div>
+
+      <!-- Mobile plain link -->
+      <a class="mobile-only" href="index.html#categories">Categories</a>
+
+      <a href="gallery.html">Gallery</a>
+      <a href="shop.html">Shop</a>
+      <a href="men.html">Men</a>
+      <a href="women.html">Women</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="cart.html">Cart</a>
+    </div>
+    <button aria-label="Menu" class="hamburger">&#9776;</button>
+  </nav>
+</header>
+  <!-- paste header here -->
+
+  <main class="main">
+  <h1>Contact Us</h1>
+  <div class="form-wrap">
+    <form class="contact-form" onsubmit="event.preventDefault()">
+  <div class="form-group">
+    <label for="name">Full name</label>
+    <input id="name" name="name" type="text" autocomplete="name" required />
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input id="email" name="email" type="email" autocomplete="email" required />
+  </div>
+  <div class="form-group">
+    <label for="topic">Topic</label>
+    <select id="topic" name="topic" required>
+      <option value="">Select a topic</option>
+      <option value="order">Order support</option>
+      <option value="returns">Returns</option>
+      <option value="product">Product question</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <div class="form-group half">
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+1 555 123 4567" />
+    </div>
+    <div class="form-group half">
+      <label for="orderId">Order ID (optional)</label>
+      <input id="orderId" name="orderId" type="text" placeholder="e.g., LM-310-8452" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+  </div>
+  <button type="submit" class="btn-primary">Send message</button>
+</form>
+
+  </div>
+</main>
+
+
+  <!-- Footer -->
+      <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>DesignerShoe</h4>
+      <p class="meta">Performance meets style. Crafted for everyday athletes and tastemakers.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul class="footer-links">
+        <li><a href="shop.html?category=new">New Arrivals</a></li>
+        <li><a href="shop.html?category=bestsellers">Best Sellers</a></li>
+        <li><a href="shop.html?category=limited">Limited Edition</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul class="footer-links">
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html#shipping">Shipping</a></li>
+        <li><a href="faq.html#returns">Returns</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <form class="newsletter" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="you@example.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 DesignerShoe</span>
+    <span>Privacy & Terms</span>
+  </div>
+</footer>
+  <!-- paste footer here -->
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
